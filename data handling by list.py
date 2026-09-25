@@ -54,7 +54,7 @@ while flag:
     print("3 - for show the spesific data")
     print("4 - for show all data")
     
-    # to calling function
+    # to calling function and taking choice
 
     choice=int(input("enter your choice"))
     if choice==1:
