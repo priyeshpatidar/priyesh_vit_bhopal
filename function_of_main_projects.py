@@ -8,12 +8,18 @@ def add_data(l):
     n=int(input("enter no of data "))
     for i in range(n):
         x=[]
-        id=int(input("enter id :"))
-        name=input("enter name of employ :")
-        experince=int(input("enter experince in years :"))
-        salary=int(input("enter salary :"))
-        x=[id,name,experince,salary]
-        l.append(x)
+        try:
+            id=int(input("enter id :"))
+            name=input("enter name of employ :")
+            experince=int(input("enter experince in years :"))
+            salary=int(input("enter salary :"))
+            x=[id,name,experince,salary]
+            l.append(x)
+            
+        #to counter the invalid inputs we will add
+        
+        except ValueError:
+            print ("invalid input")
     return l
 
 #function to remove a data from table
