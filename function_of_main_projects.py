@@ -29,6 +29,9 @@ def remove(l):
     for i in l:
         if i[0]==a:
             l.remove(i)
+    else:
+        print("emoloyee not found")
+    
     return l
 
 #function to show a data with emp_id
@@ -38,10 +41,15 @@ def show(l):
     for i in l:
         if i[0]==a:
             print(i)    
-            
+    else:
+        print("emoloyee not found")  
+        
 #function to display all data in the data base
 
 def show_all(l):
+    if not employees:
+        print("No employees found.")
+        return
     for i in l:
         print(i)
 
