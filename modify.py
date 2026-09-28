@@ -10,7 +10,10 @@ import function_of_modify as f_o_m
 #main function of modify
 
 def modify_table(l):
-    print("enter what you want to modify")
+
+    # giving user choice
+    
+    print("------enter what you want to modify------")
     print("1 for emp_id:")
     print("2 for name:")
     print("3 for experince")
@@ -18,7 +21,7 @@ def modify_table(l):
     
     # taking user choice
     
-    c=int(input("enter you choice"))
+    c=int(input("enter you choice:"))
     
     # calling the function
     
@@ -32,6 +35,7 @@ def modify_table(l):
         l=f_o_m.change_salary(l)
     else:
         print("invalid choice")
+        modify_table(l)
 
 #**************************this is end of this file *************************************
 #***********************now this file is ready to import*********************************
