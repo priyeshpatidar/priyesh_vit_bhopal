@@ -74,6 +74,8 @@ When launched, you can choose from these options by entering the respective nume
 * **`3` - Show Specific Data:** Queries the system for a matching `emp_id` and prints that single employee's array.
 * **`4` - Show All Data:** Loops through and displays all rows inside the application memory.
 * **`5` - Modify Data:** Branches off into the configuration adjustment submenu.
+* **`6` - Exit:** to exit the loop and end the program
+* **`7` - increase the salary of an employ:** to increase the salary of an employ
 
 #### 2. The Modification Submenu
 Selecting Option `5` routes your application terminal path into a specialized attribute editor:
